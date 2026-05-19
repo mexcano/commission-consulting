@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="Cano">
+  <rect x="0" y="0" width="100" height="100" fill="#0f1e3d" rx="14"/>
+  <path d="M 70 30 A 22 22 0 1 0 70 70" stroke="#ffffff" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <rect x="58" y="63" width="5" height="10" fill="#5dc1d9" rx="1"/>
+  <rect x="66" y="57" width="5" height="16" fill="#5dc1d9" rx="1"/>
+  <rect x="74" y="50" width="5" height="23" fill="#5dc1d9" rx="1"/>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 110" role="img" aria-label="Cano Commission Consulting">
+  <!-- Logomark -->
+  <rect x="0" y="5" width="100" height="100" fill="#0f1e3d" rx="14"/>
+  <!-- Stylized C: arc + ascending bars suggesting growth -->
+  <path d="M 70 35 A 22 22 0 1 0 70 75" stroke="#ffffff" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <!-- Teal ascending bars -->
+  <rect x="58" y="68" width="5" height="10" fill="#5dc1d9" rx="1"/>
+  <rect x="66" y="62" width="5" height="16" fill="#5dc1d9" rx="1"/>
+  <rect x="74" y="55" width="5" height="23" fill="#5dc1d9" rx="1"/>
+  <!-- Wordmark -->
+  <text x="120" y="55" font-family="Georgia, 'Times New Roman', serif" font-size="36" font-weight="700" fill="#0f1e3d" letter-spacing="0.5">Cano</text>
+  <text x="120" y="80" font-family="'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="600" fill="#0f1e3d" letter-spacing="3.2">COMMISSION CONSULTING</text>
+</svg>
