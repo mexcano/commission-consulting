@@ -403,12 +403,23 @@
         </div>
         <button type="submit" class="btn">Send Message</button>
         <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        <div class="form-success" id="form-success" hidden>
+          <div class="form-success-check" aria-hidden="true">&#10003;</div>
+          <h3>Thanks &mdash; message received!</h3>
+          <p>I'll get back to you within one business day. If it's urgent, call 562-818-3249.</p>
+          <button type="button" class="btn-link" id="form-again">Send another message</button>
+        </div>
       </form>
       <script>
         (function () {
           var form = document.getElementById('contact-form');
           var status = document.getElementById('form-status');
           var button = form.querySelector('button[type="submit"]');
+          var success = document.getElementById('form-success');
+          document.getElementById('form-again').addEventListener('click', function () {
+            success.hidden = true;
+            form.classList.remove('is-sent');
+          });
           form.addEventListener('submit', function (e) {
             e.preventDefault();
             var data = new FormData(form);
@@ -422,8 +433,9 @@
               .then(function (json) {
                 if (!json.success) throw new Error(json.message || 'Send failed');
                 form.reset();
-                status.className = 'form-status form-status-ok';
-                status.textContent = "Thanks! Your message is on its way. I'll be in touch within one business day.";
+                form.classList.add('is-sent');
+                success.hidden = false;
+                success.scrollIntoView({ behavior: 'smooth', block: 'center' });
               })
               .catch(function () {
                 status.className = 'form-status form-status-error';

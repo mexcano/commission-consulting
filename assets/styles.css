@@ -470,6 +470,15 @@ img, svg { max-width: 100%; height: auto; display: block; }
 .form-status { margin: 14px 0 0; font-size: 14px; min-height: 1em; }
 .form-status-ok { color: #1f7a4d; }
 .form-status-error { color: #b42318; }
+.contact-form.is-sent > :not(.form-success) { display: none; }
+.form-success { text-align: center; padding: 32px 8px; }
+.form-success h3 { color: var(--navy); font-size: 22px; margin: 12px 0 8px; }
+.form-success p { color: var(--mute); font-size: 15px; margin: 0 0 18px; }
+.form-success-check {
+  width: 56px; height: 56px; margin: 0 auto; border-radius: 50%;
+  background: #e3f4ea; color: #1f7a4d; font-size: 28px; line-height: 56px; font-weight: 700;
+}
+.btn-link { background: none; border: 0; color: var(--teal-2); font: inherit; font-size: 14px; cursor: pointer; text-decoration: underline; }
 
 @media (max-width: 768px) {
   .contact-grid { grid-template-columns: 1fr; gap: 32px; }
