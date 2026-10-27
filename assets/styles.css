@@ -465,6 +465,11 @@ img, svg { max-width: 100%; height: auto; display: block; }
 }
 .form-row textarea { resize: vertical; min-height: 110px; }
 .contact-form .btn { width: 100%; padding: 14px; font-size: 15px; }
+.contact-form .btn:disabled { opacity: 0.6; cursor: wait; transform: none; }
+.form-honeypot { display: none; }
+.form-status { margin: 14px 0 0; font-size: 14px; min-height: 1em; }
+.form-status-ok { color: #1f7a4d; }
+.form-status-error { color: #b42318; }
 
 @media (max-width: 768px) {
   .contact-grid { grid-template-columns: 1fr; gap: 32px; }
